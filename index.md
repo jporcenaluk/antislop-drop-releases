@@ -12,6 +12,15 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.15 (2026-05-09)
+
+## Release notes
+
+- Add a dry-run Cloud Run budget enforcer with protected prereq infrastructure, Pub/Sub budget notifications, and guarded smoke testing.
+- Restore automatic release-note publishing and upgrade deploy workflows to Pulumi Actions v7.
+
+---
+
 ## v0.0.1-omega.13 (2026-05-06)
 
 Fixes production backfill retries by adding the required BigQuery partition filter to the enrichment completeness check.
