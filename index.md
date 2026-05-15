@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.16 (2026-05-15)
+
+Some internal improvements - mainly around tests and refactoring! What does this mean for you, dear reader? Not a whole heckuva lot. Stay tuned.
+
+---
+
 ## v0.0.1-omega.15 (2026-05-09)
 
 ## Release notes
