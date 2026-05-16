@@ -12,6 +12,44 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.19 (2026-05-16)
+
+## Release notes
+
+This release improves the daily newsletter draft path so it is more likely to produce a usable editorial draft instead of a degraded or silently unreliable one.
+
+What changed for the product:
+
+- Daily newsletter composition now runs on the intended Gemini 3.1 Pro Preview model in production, giving the final issue writer more capable reasoning for the editorial draft.
+- Compose has a longer execution window, so the service no longer cuts off normal long-form newsletter generation at the old 60-second limit.
+- If the model returns malformed or mechanically invalid structured output, the system now retries the right part of the compose flow and fails closed if it still cannot produce a valid issue.
+- Mechanical validation is now focused on deterministic shape and length constraints instead of semantic word-policing, so validation protects deliverability without rewriting editorial judgment.
+- Newsletter citations now use numbered references in the body with an explicit source list, making link destinations clearer for readers than opaque embedded links.
+- Draft delivery metadata now distinguishes a Resend draft from a sent newsletter, so ignored drafts do not pollute future issue memory as if they were sent.
+- Staging verification covered the real Cloud Run path, including the previous ADK malformed-output, Vertex schema, and missing handoff-state failure modes.
+
+Verification:
+
+- Local: `make fix`
+- Local: `make verify-agent` (`335 passed, 13 deselected, 3 warnings` on the final hotfix)
+- PR checks: #446, #447, #448, and #449 passed required CI before merge
+- Staging: Deploy to Staging run `25960890084` passed native pipeline, native newsletter, and broadcast-bucket polling
+- Staging draft: Resend broadcast draft `503a3889-6482-4757-85fb-73a04e174f0c`
+
+---
+
+<details><summary>Commits since last release</summary>
+
+fc149fd fix(compose): fallback on missing ADK handoff state
+ff15ced fix(compose): emit Vertex-compatible reference schema
+ca966d6 fix(compose): fallback on malformed ADK output
+eb532db fix(compose): prevent degraded newsletter drafts
+8bea852 chore(version): sync canonical version with production
+
+</details>
+
+---
+
 ## v0.0.1-omega.18 (2026-05-16)
 
 Production redeploy of v0.0.1-omega.17 after the May 15 GitHub Actions queue incident. No code changes.
