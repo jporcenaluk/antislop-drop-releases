@@ -12,6 +12,16 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.20 (2026-05-18)
+
+General improvements to the editorial process, specifically:
+
+- exports logs from AI generation process
+- adds fallbacks for recovery from model failure
+- adds time-bounded 'thinking'
+
+---
+
 ## v0.0.1-omega.19 (2026-05-16)
 
 ## Release notes
