@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.21 (2026-05-19)
+
+The one main update here is: Adding source metadata and disclosure in the footer.
+
+---
+
 ## v0.0.1-omega.20 (2026-05-18)
 
 General improvements to the editorial process, specifically:
