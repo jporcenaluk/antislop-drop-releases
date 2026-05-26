@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.22 (2026-05-26)
+
+The newsletter goes to a structure of having a clear lead, a body that synthesizes three stories, and those three stories linked out to what they contributed to in the body. Short and sweet.
+
+---
+
 ## v0.0.1-omega.21 (2026-05-19)
 
 The one main update here is: Adding source metadata and disclosure in the footer.
