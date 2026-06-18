@@ -12,6 +12,20 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.23 (2026-06-18)
+
+This release improves the daily newsletter’s editorial quality, source discipline, and validation path. It sharpens the compose prompts around reader usefulness and evidence honesty, gives the editorial agents better structured inputs, and adds tooling to review and evaluate source selection before changes reach production.
+
+  ### Highlights
+
+  - Improved the daily compose flow with more human editorial prompts, verified web research, cross-time context, and stricter structured writer output.
+  - Strengthened source integrity by validating evidence rows, repairing researcher query paths, and grounding writer output in hydrated selected sources.
+  - Added source-selection evaluation tools (so this lil' newsletter is gonna be evaluated to understand what 'better' means in future!)
+  - Cleaned up legacy compose and pipeline code, including dead selection paths, old SQL tooling, sync entry points, and stale artifacts.
+  - Refreshed repository and agent instructions so future work follows the current newsletter architecture and review expectations.
+
+---
+
 ## v0.0.1-omega.22 (2026-05-26)
 
 The newsletter goes to a structure of having a clear lead, a body that synthesizes three stories, and those three stories linked out to what they contributed to in the body. Short and sweet.
