@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.24 (2026-06-29)
+
+Create evaluation framework to run evals on outputs, allow for tuning of parameters, simplify the editorial pipeline.
+
+---
+
 ## v0.0.1-omega.23 (2026-06-18)
 
 This release improves the daily newsletter’s editorial quality, source discipline, and validation path. It sharpens the compose prompts around reader usefulness and evidence honesty, gives the editorial agents better structured inputs, and adds tooling to review and evaluate source selection before changes reach production.
