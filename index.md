@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.25 (2026-07-15)
+
+Updated retired models, fixing validation, and ensuring that themes previously sent are not repeated. Also upgrade the agentic framework to the newest version!
+
+---
+
 ## v0.0.1-omega.24 (2026-06-29)
 
 Create evaluation framework to run evals on outputs, allow for tuning of parameters, simplify the editorial pipeline.
