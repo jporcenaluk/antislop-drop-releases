@@ -12,6 +12,43 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.26 (2026-07-27)
+
+## Release notes
+
+This release replaces the newsletter's legacy delivery-memory spine with a provider-confirmed delivery ledger. Composition now treats only broadcasts confirmed as sent, with a provider timestamp, as reader-visible history. The migration preserves rendered content, source references, and rollback tables.
+
+### Highlights
+
+- Replace active legacy newsletter persistence with `newsletter_delivery_metadata` and editorial issue memory.
+- Add independent Resend delivery reconciliation without creating, scheduling, sending, or deleting broadcasts.
+- Preserve authored Markdown, rendered text and HTML, source references, scheduling state, and sent timestamps.
+- Consolidate agent instructions and add recovered system and evaluation design documentation.
+
+### Maintenance
+
+- Remove redundant deterministic brief self-checks.
+- Update Pillow, pyasn1, pypdf, setuptools, and other locked dependencies.
+
+---
+
+<details><summary>Commits since last release</summary>
+
+6093b8e ci(deps): bump the uv group across 1 directory with 3 updates (#684)
+6b6a8d0 refactor(compose): replace legacy memory spine with delivery ledger (#672)
+55348d0 refactor(agents): resolve every tool to one canonical AGENTS.md instruction body (#683)
+c35598e docs(agents): standardize outcome-led GitHub issues (#681)
+7fa24e2 docs(specification): add recovered system specification (#678)
+93dec81 refactor(validation): drop deterministic brief self-checks
+5a9cf0c ci(deps): bump pillow in the uv group across 1 directory (#680)
+78e3378 docs(eval): compare incremental and greenfield harness plans (#677)
+99cdc9f docs(evals): add eval rigor upgrade design spec and implementation plan (#676)
+32c5ffb ci(deps): bump the uv group across 1 directory with 4 updates (#674)
+
+</details>
+
+---
+
 ## v0.0.1-omega.25 (2026-07-15)
 
 Updated retired models, fixing validation, and ensuring that themes previously sent are not repeated. Also upgrade the agentic framework to the newest version!
