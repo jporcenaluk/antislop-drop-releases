@@ -12,6 +12,16 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.27 (2026-08-13)
+
+## Release notes
+
+### More reliable daily briefs
+
+The daily brief can now recover once from a transient scheduled-run failure. Its editorial context also stays focused as it grows, helping each new edition draw on useful history without being crowded by it.
+
+---
+
 ## v0.0.1-omega.26 (2026-07-27)
 
 ## Release notes
