@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.29 (2026-09-10)
+
+Soon you'll be able to sign up for the email yourself!
+
+---
+
 ## v0.0.1-omega.27 (2026-08-13)
 
 ## Release notes
