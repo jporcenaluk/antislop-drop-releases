@@ -12,6 +12,12 @@ Fixed newsletter theme selection so per-domain article caps are applied before t
 
 ---
 
+## v0.0.1-omega.30 (2026-09-15)
+
+Signup - ensure that users are not able to inadvertently try to sign up before Turnstile verification.
+
+---
+
 ## v0.0.1-omega.29 (2026-09-10)
 
 Soon you'll be able to sign up for the email yourself!
